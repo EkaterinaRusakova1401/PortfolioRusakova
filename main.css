@@ -1,0 +1,410 @@
+/* Сброс стилей */
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.auto-mid {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.header {
+    width: 1440px;
+    height: 68px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+/* Стили для списка навигации */
+.header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 32px; /* Отступ справа 32px */
+    margin-left: 500px; /* Отступ справа 22px */
+}
+
+.header ul li {
+    margin-right: 24px;
+}
+
+.header ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+/* Блок справа с иконкой и кнопкой */
+.header-button {
+    display: flex;
+    align-items: center;
+}
+/* Иконка солнца   width: 40px;
+    height: 40px; */
+.day-img {
+    margin-right: 16px
+}
+/* Кнопка "Download CV" */
+.cv-button {
+    display: inline-block;
+    width: 136px;
+    height: 36px;
+    background-color: #000; /* Черный цвет кнопки */
+    color: #fff; /* Белый текст */
+    text-align: center;
+    line-height: 36px; /* Центрирование текста */
+    border-radius: 18px; /* Закругленные углы */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 32px; /* Отступ справа 32px */
+    margin-left: 22px; /* Отступ справа 22px */
+}
+
+/* Отступы для иконки и кнопки */
+.header-button {
+    margin-right: 16px;
+}
+
+
+/* Первая Секция с текстом и изображениями */
+.first-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 96px;
+}
+
+.kate-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 768px;
+}
+
+.kate-element-text {
+    flex: 1;
+    max-width: 768px;
+    padding-right: 20px;
+}
+
+.kate-element-text h1 {
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.kate-element-text h1 img {
+    margin-left: 10px;
+    width: 50px;
+}
+
+.kate-element-text h2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Блок с локацией */
+.kate-location {
+    display: flex;
+    flex-direction: column; /* Столбец для вертикального расположения текста */
+    align-items: flex-start;
+    font-size: 16px; 
+    font-weight: 400; 
+    color: #808080; 
+}
+
+.kate-location h3, .kate-location p {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 16px; 
+    font-family: 'Inter', sans-serif; 
+    font-weight: 400; 
+    color: #808080; 
+}
+
+.kate-location h3 img, .kate-location p img {
+    margin-right: 10px;
+}
+
+
+.kate-element-img img {
+    width: 360px;
+    height: 400px;
+}
+
+    /* Контейнер для изображений */
+.img-container1 {
+    position: relative; /* Позиционирование для создания системы координат для дочерних элементов */
+    width: 100%;
+    height: 100%;
+}
+
+/* Первое изображение (на переднем плане) */
+.img-1 {
+    position: relative;
+    z-index: 2;
+    border: 10px solid #fff; /* Рамка вокруг изображения */
+    width: 100%;
+    height: auto;
+    box-sizing: border-box; /* Включает рамку внутрь изображения */
+    
+
+}
+/* Второе изображение (сзади и со сдвигом) */
+.img-2 {
+    position: absolute;
+    top: 40px; /* Сдвиг вниз */
+    left: 40px; /* Сдвиг вправо */
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+/* Блок с иконками */
+.kate-element-icon {
+    display: flex;
+    gap: 15px;
+    margin-top: 48px; /* Отступ в 48px от текста */
+    justify-content: flex-start; /* Выравнивание иконок по началу */
+    align-items: center; /* Вертикальное выравнивание иконок */
+}
+
+/* Все иконки одинакового размера */
+.kate-element-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain; /* Убедиться, что изображение масштабируется, сохраняя пропорции */
+    }
+.kate-element-icon .icon-large {
+    width: 60px; /* 40px * 1.5 = 60px */
+    height: 60px;
+}
+
+
+/* Вторая секция обо мне */
+.second-section {
+    display: flex;
+    justify-content: space-betweenr;
+    align-items: center;
+    padding-top: 96x;
+    padding-bottom: 80px;
+    width: 1440px; 
+    height: 0 auto;  
+}
+
+
+
+
+.about-me {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+/* Контейнер для заголовка и контента */
+.about-me-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+/* Хедер секции */
+.about-me-TH h2 {
+    font-size: 30px;
+    margin-bottom: 96px;
+    margin-top: 48px;
+    text-align: center;
+}
+.about-me-TH {   
+    display: flex;
+    width: 105px;
+    height: 28px;
+    background-color:lightgray; /* Серый цвет кнопки */
+    color: black; /* Черный текст */
+    text-align: center;
+    line-height: 25px; /* Центрирование текста */
+    border-radius: 15px; /* Закругленные углы */
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 20px; /* Отступ справа 20px */
+    margin-left: 23px; /* Отступ справа 23px */
+}
+
+/* Левая колонка с изображениями */
+.about-me-img {
+    width: 440px;
+    height: 520px;
+    margin-right: 144px;
+    margin-left: 72px;
+    margin-bottom: 174px;
+    margin-top: 48px;
+    position: relative;
+   
+    }
+    /* Вторая секция Контейнер для изображений  */
+    .img-container3 {
+        position: relative; 
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* Первое изображение (на переднем плане) */
+    .img-11 {
+        position: relative;
+        z-index: 2;
+        border: 10px solid #fff; /* Рамка вокруг изображения */
+        width: 100%;
+        height: auto;
+        box-sizing: border-box; /* Включает рамку внутрь изображения */
+        
+    
+    }
+    /* Второе изображение (сзади и со сдвигом) */
+    .img-22 {
+        position: absolute;
+        top: 40px; /* Сдвиг вниз */
+        left: -40px; /* Сдвиг вправо */
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        border: none;
+    }
+
+
+ 
+    /* Правая колонка с текстом */
+    .about-me-text {
+        max-width: 584px;
+        max-height: 694px;
+        font-size: 16px; 
+        font-family:'Inter', sans-serif;
+        font-weight: 400; 
+    }
+
+.about-me-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    width: 584px;
+}
+
+.about-me-text-uls {
+display: grid;
+grid-template-columns: repeat(2, 1fr); /* Две колонки */
+grid-gap: 10px; /* Промежутки между колонками */
+margin-top: 20px;
+margin-left: 17px;
+margin-right: 10px;
+width: 584px;
+} 
+
+.about-me-text-uls ul {
+width: 584px;
+padding: 0;
+margin: 0;
+line-height: 1.0;
+}
+
+.about-me-text-uls ul li {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.about-me-text-footer p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    width: 584px;
+   
+}
+
+
+
+.free-section {
+    margin-top: 150px;
+    display: flex;
+}
+
+/* Хедер секции */
+.skills-TH h2 {
+    font-style: normal;
+    margin-bottom: 96px;
+    margin-top: 48px;
+    text-align: center;
+    justify-content: center;
+}
+.skills-TH {   
+    display: flex;
+    width: 75px;
+    height: 28px;
+    background-color:lightgray; /* Серый цвет кнопки */
+    color: black; /* Черный текст */
+    text-align: center;
+    line-height: 25px; /* Центрирование текста */
+    border-radius: 15px; /* Закругленные углы */
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 10px; /* Отступ справа 10px */
+    margin-left: 10px; /* Отступ справа 10px */
+}
+
+.skills-text {
+display: flex;
+margin-top: 36px;
+margin-bottom: 48px;
+
+}
+
+.skills-text b {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+/*.skills {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 столбцов одинаковой ширины */
+    grid-template-rows: 100px 100px; /* Две строки,каждая высотой 100px */
+    gap: 48px 0; /* Отступ между строками 48px , по горизонтали 0 */
+    width: 1280px;  
+    margin: 0 auto;  
+
+.skills-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.skills-element img {
+    width: 40px; /* Icon width */
+    height: 40px; /* Icon height */
+    margin-bottom: 8px; /* Space between icon and label */
+}
+
